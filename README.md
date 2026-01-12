@@ -10,6 +10,7 @@
 - [Findings](#findings)
 - [Recommendations](#recommendations)
 
+
 ### Project Overview
 This project aims to provide insights into **banking transaction performance** by analyzing customer transactions, card usage, and fraud-related activities.  
 By leveraging **SQL Server** for data processing and **Power BI** for visualization, the project identifies spending patterns, key risk indicators, and actionable insights to support data-driven decision making in the banking domain.
@@ -59,10 +60,15 @@ Based on the analysis, I recommend the following actions:
 ### References
 
 
+😄
+|Heading1|Heading2|
+|---------|--------|
+|Content|Content2|
+|Python|SQL|
 
-
-
-
+`column_1`
+**bold**
+*italic*
 
 
 
