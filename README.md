@@ -39,7 +39,27 @@ In the initial data preparation phase, I performed the following tasks:
    - Verified primary and foreign key relationships
   
 ### Exploratory Data Analysis
+1. Transaction Data
+- The transaction dataset contains 11.28 million transactions with a total transaction value of $485.3 million. The average transaction amount is approximately $43, indicating that the majority of transactions are relatively low-value and reflect everyday consumer spending behavior.
 
+- Transaction amounts range from - $500.00 to $6,820.20. Most transactions fall within the $0–$100 range, with the $10–$50 bucket being the most frequent. However, higher-value transactions between $50–$500 contribute disproportionately to total transaction value. The presence of negative transaction values suggests refunds or reversals, which are common in real-world banking transaction systems and should be treated as a distinct transaction category in further analysis.
+  
+- Swipe transactions account for the majority of transaction volume, while online transactions represent a smaller but notable share. Transaction activity peaks between 10 AM and 3 PM, before gradually declining in the evening. Slightly higher transaction activity is observed in January and March, while mid-year months show somewhat lower volumes.
+
+2. Customers Data
+- The customer dataset includes 2,000 unique customers with an average age of 45, spanning from 18 to 101 years old, indicating a broad and balanced age distribution across customer segments. Middle-aged groups account for a large proportion of customers, reflecting a financially active population.
+
+- The average yearly income is approximately $45,716, while the average total debt reaches $63,710, suggesting that many customers carry significant financial obligations relative to income. Despite this, overall credit quality remains strong, with an average credit score of 709.
+
+- Most customers fall into the Good and Excellent credit score categories, while only a small fraction are classified as Fair or Poor. Credit scores remain relatively stable across income groups, indicating consistent credit behavior regardless of income level.
+
+3. Cards Data
+- The cards dataset includes 6,146 cards issued to 2,000 customers.
+  
+- The average credit limit is $14,347, ranging from $0 to $151,223, indicating significant variation in customer credit capacity.
+  
+- Debit cards account for the majority of issued cards, while credit cards represent a smaller but important segment. Visa and Mastercard dominate across both debit and credit card types, with premium brands such as American Express and Discover serving higher-end customer segments.
+  
 ### Data Analysis
 ```sql
   SELECT * FROM
